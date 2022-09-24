@@ -18,16 +18,6 @@ public class RatingsResource {
         return new Rating(movieId, 4);
     }
 
-//    @RequestMapping("/user/{userId}")
-//    public List<Rating>  getUserRatings(@PathVariable("userId") String userId) {
-//        List<Rating> ratings = Arrays.asList(
-//                new Rating("1234", 4),
-//                new Rating("5678", 5)
-//        );
-//        return ratings;
-//
-//    }
-
     @RequestMapping("/user/{userId}")
     public UserRating getUserRatings(@PathVariable("userId") String userId) {
         UserRating userRating = new UserRating();
